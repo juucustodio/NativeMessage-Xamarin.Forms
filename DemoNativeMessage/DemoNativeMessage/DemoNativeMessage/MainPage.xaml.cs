@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace DemoNativeMessage
@@ -13,5 +9,10 @@ namespace DemoNativeMessage
 		{
 			InitializeComponent();
 		}
-	}
+
+	    private void Button_OnClicked(object sender, EventArgs e)
+	    {
+	        DependencyService.Get<IMessage>().LongAlert("Hello");
+	    }
+    }
 }

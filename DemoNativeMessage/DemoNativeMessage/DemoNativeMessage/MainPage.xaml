@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:DemoNativeMessage"
              x:Class="DemoNativeMessage.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Button Text="Click me" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Clicked="Button_OnClicked"/>
 
 </ContentPage>
